@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20sp"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/alfa_slab_one"
+        android:gravity="center"
+        android:text="Body Mass Index"
+        android:textSize="30sp"
+        android:textColor="#303EAE" />
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60sp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:hint="Berat (Kg)">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tfBerat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:maxLength="5" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40sp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:hint="Tinggi (Cm)">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tfTinggi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:maxLength="5" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginTop="50sp"
+        android:gravity="center">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btHitung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cek BMI"
+            android:textAllCaps="false"
+            android:backgroundTint="#303EAE"
+            app:cornerRadius="50sp"
+            android:layout_marginRight="100sp"/>
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btClear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:textAllCaps="false"
+            android:backgroundTint="#D82148"
+            app:cornerRadius="50sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/Hasil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60sp"
+        android:fontFamily="@font/allerta"
+        android:gravity="center"
+        android:textColor="#303EAE"
+        android:textSize="20sp" />
+</androidx.appcompat.widget.LinearLayoutCompat>
